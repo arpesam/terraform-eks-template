@@ -14,8 +14,18 @@ After you apply and everything is deployed (expect this to take at least 15 minu
 
 After everything ran successfully you can finally run `kubectl get nodes` to see if from local you are able to connect to your just created EKS cluster.
 
+Create you first pod by running `kubectl create deploy  nginx --image=nginx`.
+
+## Commands to play with the EKS
+`kubectl get nodes` \
+`kubectl get nodes` \
+`kubectl create deploy  nginx --image=nginx` \
+`kubectl get pods` \
+`kubectl port-forward pod/{PODNAME} PORT:PORT`
+
 ## Useful commands
-`terraform init`
-`terraform plan`
-`terraform apply`
-`terraform apply --auto-approve`
+`terraform init` \
+`terraform plan` \
+`terraform apply` \
+`terraform apply --auto-approve` \
+`terraform destroy`
